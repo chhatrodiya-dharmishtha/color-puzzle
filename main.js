@@ -1,6 +1,6 @@
 var game,
   level,
-  color = ["red", "blue", "yellow"],
+  color = ["orange", "skyblue"],
   water = [],
   w = [],
   currentLevel,
@@ -56,7 +56,7 @@ window.OpenLevel = function (x) {
 function ApplyInfo(a = water) {
   if (!won) {
     let d = 0,
-      heading = ["EASY"][currentLevel];
+      heading = ["Level 2"][currentLevel];
     level.innerHTML = `<div id = 'lvl-heading'>${heading}</div>`;
     for (let i of testTubePosition[currentLevel]) {
       level.innerHTML += `<div class = "test-tube" style="top:${i[1]}px;left:calc(50vw + ${i[0]}px);transform:rotate(0deg);" onclick="Clicked(${d});">
